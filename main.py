@@ -1,6 +1,11 @@
-print("hello")
+import yfinance as yf
 
-def hello():
-    print("hello world2")
+
+ticker = yf.Ticker('KO').info
+market_price = ticker['regularMarketPrice']
+previous_close_price = ticker['regularMarketPreviousClose']
+print('Ticker: KO')
+print('Market Price:', market_price)
+print('Previous Close Price:', previous_close_price)
 
 #WEFGQEUIBVQEUB3B#
