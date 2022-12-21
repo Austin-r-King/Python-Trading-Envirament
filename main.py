@@ -3,7 +3,7 @@ import datetime
 from datetime import date
 
 def KO_Info():
-    ticker = yf.Ticker('KO').info
+    ticker = yf.Ticker('KO').inmfo
     market_price = ticker['regularMarketPrice']
     print('Ticker: KO')
     print('Market Price:', market_price)
